@@ -248,7 +248,9 @@ body{
 
 .mobile-menu{
     padding: 24px;
-    position: relative;
+    position: absolute;
+    top: 54px;
+    left: 0;
 }
 
 .mobile-menu ul{
@@ -441,6 +443,10 @@ nav{
     border-bottom: 1px solid var(--very-light-pink);
 }
 
+nav img{
+    cursor: pointer;
+}
+
 nav .navbar-left{
     display: flex;
 }
@@ -466,10 +472,6 @@ nav .navbar-left{
     align-items: center;
     cursor: pointer;
 }
-
-/* .navbar-left ul li{
-    margin-right: 24px;
-} */
 
 .navbar-left ul li a{
     text-decoration: none;
@@ -614,7 +616,7 @@ nav .navbar-left{
         display: block;
     }
 
-    .navbar-left ul, .navbar-right ul li:nth-child(1){
+    .navbar-left ul, .navbar-right ul li:nth-child(1), .desktop-menu{
         display: none;
     }
 
@@ -625,5 +627,11 @@ nav .navbar-left{
     .shop-cart{
         width: 100%;
         margin-right: 0;
+    }
+}
+
+@media (min-width: 821px){
+    .mobile-menu{
+        display: none;
     }
 }
