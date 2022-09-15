@@ -200,11 +200,18 @@ body{
 }
 
 .desktop-menu{
+    position: absolute;
+    top: 54px;
+    right: 90px;
     width: 100px;
     height: auto;
     border: 1px solid var(--very-light-pink);
     border-radius: 6px;
     padding: 20px 20px 0 20px;
+}
+
+.inactive{
+    display: none;
 }
 
 .desktop-menu ul {
@@ -443,7 +450,7 @@ nav .navbar-left{
 }
 
 .logo-navbar{
-    width: 100px;
+    width: 100%;
 }
 
 .navbar-left ul {
@@ -457,11 +464,12 @@ nav .navbar-left{
     margin: 12px;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
-.navbar-left ul li{
+/* .navbar-left ul li{
     margin-right: 24px;
-}
+} */
 
 .navbar-left ul li a{
     text-decoration: none;
@@ -568,7 +576,7 @@ nav .navbar-left{
     transform: rotate(180deg);
 }
 
-@media (max-width: 640px){
+@media (max-width: 820px){
     .logo{
         display: block;
     }
